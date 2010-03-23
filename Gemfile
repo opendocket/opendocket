@@ -12,6 +12,7 @@ gem "rails", "3.0.0.beta"
 gem "sqlite3-ruby", :require => "sqlite3"
 
 gem "haml"
+gem "inherited_resources"
 
 ## Bundle the gems you use:
 # gem "bj"
