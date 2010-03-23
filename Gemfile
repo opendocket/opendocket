@@ -25,4 +25,8 @@ gem "sqlite3-ruby", :require => "sqlite3"
 
 group :test do
   gem "rspec-rails", ">= 2.0.0.beta.4"
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'test-unit' #tempory fix for some combination of Ruby1.9/Rails3/Cucumber
+  gem 'cucumber-rails'
 end
