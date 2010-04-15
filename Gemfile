@@ -2,7 +2,7 @@
 source 'http://gemcutter.org'
 
 
-gem "rails", "3.0.0.beta"
+gem "rails", "3.0.0.beta3"
 
 ## Bundle edge rails:
 # gem "rails", :git => "git://github.com/rails/rails.git"
@@ -13,6 +13,8 @@ gem "sqlite3-ruby", :require => "sqlite3"
 
 gem "haml"
 gem "inherited_resources"
+gem "ripple"
+gem "curb"
 
 ## Bundle the gems you use:
 # gem "bj"
@@ -21,15 +23,17 @@ gem "inherited_resources"
 # gem "aws-s3", :require => "aws/s3"
 
 ## Bundle gems used only in certain environments:
-# gem "rspec", :group => :test
+#gem "rspec", :group => :test
 # group :test do
 #   gem "webrat"
 # end
 
 group :test do
-  gem "rspec-rails", ">= 2.0.0.beta.4"
+  gem "rspec", ">= 2.0.0.beta.6"
+  gem "rspec-rails", ">= 2.0.0.beta.6"
   gem 'capybara'
   gem 'database_cleaner'
   gem 'test-unit' #tempory fix for some combination of Ruby1.9/Rails3/Cucumber
   gem 'cucumber-rails'
+  gem 'ruby-debug19'
 end
