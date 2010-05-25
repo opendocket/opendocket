@@ -1,0 +1,9 @@
+!!!
+%html
+  %head
+    %meta{'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
+    %title= Opendocket
+    = stylesheet_link_tag "compiled/grid", "compiled/text", :cache => "main_cache"
+  
+  %body
+    = yield
