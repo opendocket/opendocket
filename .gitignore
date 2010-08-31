@@ -1,8 +1,21 @@
+# system
+.DS_Store
 .bundle
+
+# editors
+.*.sw*
+.sw*
+.idea
+*~
+\#*
+.\#*
+
+# rails
 config/database.yml
-db/*.sqlite3
+config/ripple.yml
 db/schema.rb
 log/*.log
 tmp/**/*
+
 rerun.txt
-*.sw*
+public/stylesheets/compiled/*
