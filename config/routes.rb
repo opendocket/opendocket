@@ -1,4 +1,4 @@
-Opendocket::Application.routes.draw do |map|
+Opendocket::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
