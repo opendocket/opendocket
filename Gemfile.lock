@@ -1,12 +1,3 @@
-GIT
-  remote: http://github.com/josevalim/inherited_resources.git
-  revision: 0c24075
-  branch: master
-  specs:
-    inherited_resources (1.1.2)
-      has_scope (~> 0.5.0)
-      responders (~> 0.6.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -79,6 +70,9 @@ GEM
     haml (3.0.18)
     has_scope (0.5.0)
     i18n (0.4.1)
+    inherited_resources (1.1.2)
+      has_scope (~> 0.5.0)
+      responders (~> 0.6.0)
     json_pure (1.4.6)
     linecache19 (0.5.11)
       ruby_core_source (>= 0.1.4)
@@ -162,7 +156,7 @@ DEPENDENCIES
   curb
   formtastic (= 1.1.0.beta)
   haml
-  inherited_resources!
+  inherited_resources
   mongrel (= 1.2.0.pre2)
   rails (= 3.0.0)
   ripple (= 0.8.0.beta2)
