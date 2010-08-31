@@ -1,0 +1,7 @@
+development:
+  host: localhost
+  port: 8098
+
+test:
+  host: localhost
+  port: 8099
