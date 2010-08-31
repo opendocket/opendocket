@@ -1,0 +1,16 @@
+%h1 Listing docket_items
+
+%table
+  %thead
+    %tr
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for docket_item in @docket_items
+      %tr{ :class => cycle(:odd, :even) }
+        %td= link_to 'Show', docket_item
+        %td= link_to 'Edit', edit_docket_item_path(docket_item)
+        %td= link_to 'Destroy', docket_item, :confirm => 'Are you sure?', :method => :delete
+
+%br
+= link_to 'New docket_item', new_docket_item_path
