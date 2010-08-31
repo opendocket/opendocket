@@ -1,2 +1,2 @@
-class DocketItemsController < InheritedResources::Base
+class DocketItemsController < ApplicationController
 end
