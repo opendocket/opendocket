@@ -1,3 +1,12 @@
+GIT
+  remote: http://github.com/josevalim/inherited_resources.git
+  revision: 0c24075
+  branch: master
+  specs:
+    inherited_resources (1.1.2)
+      has_scope (~> 0.5.0)
+      responders (~> 0.6.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -60,15 +69,16 @@ GEM
       abstract (>= 1.0.0)
     ffi (0.6.3)
       rake (>= 0.8.7)
+    formtastic (1.1.0.beta)
+      actionpack (>= 2.3.0)
+      activesupport (>= 2.3.0)
+      i18n (>= 0.4.0)
     gem_plugin (0.2.3)
     gherkin (2.1.5)
       trollop (~> 1.16.2)
     haml (3.0.18)
     has_scope (0.5.0)
     i18n (0.4.1)
-    inherited_resources (1.1.2)
-      has_scope (~> 0.5.0)
-      responders (~> 0.6.0)
     json_pure (1.4.6)
     linecache19 (0.5.11)
       ruby_core_source (>= 0.1.4)
@@ -150,8 +160,9 @@ DEPENDENCIES
   compass-960-plugin
   cucumber-rails
   curb
+  formtastic (= 1.1.0.beta)
   haml
-  inherited_resources
+  inherited_resources!
   mongrel (= 1.2.0.pre2)
   rails (= 3.0.0)
   ripple (= 0.8.0.beta2)

@@ -8,6 +8,7 @@ gem "ripple", "0.8.0.beta2"
 gem "curb"
 gem "compass"
 gem "compass-960-plugin"
+gem 'formtastic', '1.1.0.beta'
 
 group :development do
   gem "mongrel", "1.2.0.pre2"
