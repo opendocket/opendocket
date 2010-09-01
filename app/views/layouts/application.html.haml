@@ -1,9 +1,29 @@
-!!!
+!!! 5
 %html
   %head
-    %meta{'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
+    %meta{:charset => 'utf-8'}
+    %meta{'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge,chrome=1'}
+    %meta{:name => 'description', :content => 'Opendocket'}
+    %meta{:name => 'author', :content => 'Vermonster LLC'}
+    %meta{:name => 'viewport', :content => 'width=device-width; initial-scale=1.0; maximum-scale=1.0;'}
     %title= Opendocket
     = stylesheet_link_tag "compiled/grid", "compiled/text", :cache => "main_cache"
-  
+    = javascript_include_tag "modernizr-1.5.min"
+
   %body
-    = yield
+    #conatiner
+
+      %header
+    
+      %section
+        #main
+          = yield
+
+      %footer
+
+    /[if lt IE 7]
+      = javascript_include_tag 'dd_belatedpng.js' 
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+    :javascript
+      !window.jQuery && document.write('<script src="/javascripts/jquery-1.4.2.min.js"><\/script>')
+    
